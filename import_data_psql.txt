@@ -1,0 +1,5 @@
+create user maxinai_user with encrypted password 'maxinai123_*';
+
+CREATE TABLE maxinai.raw_address (id numeric,country_code varchar,town varchar,street varchar,postcode varchar,longitude varchar,latitude varchar,valid_flag boolean,count varchar,house_name varchar,flat_number varchar);
+
+COPY maxinai.max_table FROM '/tmp/data.csv' DELIMITER ',' CSV HEADER;
